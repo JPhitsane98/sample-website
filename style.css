@@ -1,0 +1,269 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: lightgray;
+}
+html{
+    scroll-behavior: smooth;
+}
+section {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+img:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.5s;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-family: cursive;
+}
+#main{
+    width: 100%;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: cursive;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    overflow: hidden;
+    background-color: lightgrey;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+}
+.menu{
+    display: flex;
+}
+.menu li a{
+    padding: 10px 12px;
+    color:darkmagenta;
+    font-size: 15px;
+}
+.logo{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+.menu li a:hover{
+    background-color: darkgrey;
+    color: #FFFFFF;
+    transition: all ease 0.5s;
+}
+.menu li a:active{
+    background-color: gray;
+}
+.menu li .icon {
+    display: none;
+  }
+  
+@media screen and (max-width: 600px) {
+    .menu li a:not(:first-child) {display: none;}
+    .menu li a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .menu.responsive {position: relative;}
+    .menu.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .menu.responsive li a{
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+.home-content{
+    margin: 100px 20px;
+    font-family: cursive;
+    width:100%;
+    height: auto;
+}
+.home-content .details{
+    font-size: 20px;
+    font-family: cursive;
+}
+.home-content h2{
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 1px;
+}
+.btnCv{
+    display: flex;
+    width: 130px;
+    height: 40px;
+    color:darkmagenta;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.btnCv:hover{
+    transition: all ease 0.3s;
+    background-color: papayawhip;
+}
+#skills, #contact, #achievement, #about, #home{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 50px;
+    background-color: pink;
+}
+h1{
+    font-family: cursive;
+    font-size: 50px;
+    text-align: center;
+    color: darkmagenta;
+    text-decoration: underline;
+}
+.about-text{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: black;
+    font-family: cursive;
+}
+.achive-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.achive-image img{
+    width: 50%;
+    height: auto;
+    padding: 0px;
+    border-radius: 12px;
+}
+.skills-container h2{
+    font-family: cursive;
+    font-size: 15px;
+}
+.skills-container, .socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills-container img, .socials img{
+    float: left;
+    height: 40px;
+    padding: 8px;
+}
+.skill-bar p{
+    text-align: left;
+}
+.skill-bar{
+    text-align: right;
+    color: black;
+    font-family: cursive;
+    font-size: 500;
+    top: 10px;
+    bottom: 10px;
+}
+.colunm-bars {
+    width: 100%;
+    background-color:wheat;
+}
+.JAVA{
+    width: 70%;
+    background-color:rgb(33, 166, 211);
+}
+.C-SHARP{
+    width: 50%;
+    background-color: lightcoral;
+}
+.HTML{
+    width: 90%; 
+    background-color: lightsalmon;
+}
+.CSS{
+    width: 50%; 
+    background-color: lightgreen;
+}
+.Office-365{
+    width: 80%;
+    background-color:palevioletred;
+}
+.form-info label{
+    font-family: cursive;
+    font-weight: 500;
+}
+.form-name input,.form-email input{
+    width: 250px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: transparent;
+    margin: 20px 10px;
+    border-bottom: 2px solid black;
+}
+.form-name input::placeholder,.form-email input::placeholder{
+    opacity: 1;
+    letter-spacing: 2px;
+}
+.form-name input:focus,.form-email input:focus{
+   border-bottom: 2px solid blue;
+   transition: all ease 0.3s;
+}
+.message{
+    display: block;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid black;
+}
+.form-message textarea{
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-family: cursive;
+    font-size: 15px;
+    border: 1px solid black;
+}
+.form-message textarea::placeholder{
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: grey;
+}
+.form-info .button{
+    width: 100px;
+    height: 40px;
+    color: darkmagenta;
+    background-color: black;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: cursive;
+}
+.form-info .button:hover{
+    transition: all ease 0.2s;
+    background-color: papayawhip;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: pink;
+}
+
