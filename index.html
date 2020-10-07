@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type = "text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+   <div id="main">
+       <nav>
+           <a href="#home" class="logo">Profile</a>
+           <ul class="menu">
+               <li><a href="#home">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#achievement">Achievements</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <li>  <a href="javascript:void(0);" class="icon" onclick="menuFunction()"><i class="fa fa-bars"></i></a>
+                </li>
+           </ul>
+       </nav>
+    </div>
+    <section id="home">
+        <div class="home-content">
+            <img src="images/IMG_20190716_150003.jpg" alt="profile" width="130"height="160">
+            <h2 style="color: darkmagenta;">Selloane Phitsane,</h2>
+            <h3 style="color: darkmagenta;">Programmer</h3>
+            <p class="details">This is my Technical CV, it includes everything needed to know about me. scroll through the website to find out more.</p>
+            <a href="JS.Phitsane_CV.pdf" class="btnCv" download>Download CV</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1>About me</h1>
+            <div class="about-text">
+                <p>I am a Bsc Information Technology final year student at North-West University.
+                    My biggest strength i would say is coding and problem solving mainly in Java.
+                    The first programming language I ever learned was Java and the current one I am learning is C#.
+                    I love reading and listening to music at my spare time.
+                    And lastly my favorite operating system is Linux.</p>
+            </div>
+    </section>   
+    
+    <section id="achievement">
+        <h1>Achievements</h1>
+    <div class="achive-image">
+            <img src="images/HTML_certificate.jpg" alt="Html certificate">
+            <img src="images/Java_certificate.jpg" alt="java certificate">
+    </div>
+    </section>
+
+    <section id="skills">
+       <h1>Skills</h1>
+       <div class="skills-container">
+        <img src="images/java-logo.jpg" alt="java"/>
+        <img src="images/c-sharp.jpg" alt="c#"/>
+        <img src="images/html5-logo.jpg" alt="html"/>
+        <img src="images/css-3-logo.jpg" alt="css"/>
+        <img src="images/office-365-logo.jpg" alt="office"/>
+       </div>
+
+    <div class="skill-bar">
+        <p>JAVA</p>
+       <div class="colunm-bars">
+            <div class="JAVA">70%</div>
+        </div>
+        <p>C#</p>
+        <div class="colunm-bars">
+            <div class="C-SHARP">50%</div>
+        </div>
+        <p>HTML</p>
+        <div class="colunm-bars">
+            <div class="HTML">90%</div>
+        </div> 
+        <p>CSS</p>
+        <div class="colunm-bars">
+            <div class="CSS">50%</div>
+        </div>
+        <p>Office 365</p>
+        <div class="colunm-bars">
+            <div class="Office-365">80%</div>
+        </div>
+    </div>
+</section>  
+
+    <section id ="contact">
+        <form>
+            <div class="form-info">
+                <h1>Contact Me</h1>
+                <div class="form-name">
+                        <label>Name:</label> 
+                        <input required type="text" placeholder="Full name">
+                </div>
+                <div class="form-email">
+                       <label>Email:</label>
+                       <input required type="email" placeholder="Example@example.com"><br><br>
+                </div>
+                <div class="form-message">
+                        <label>Message:</label>
+                        <textarea required class="message" name="message" cols="10" rows="2" placeholder="Write Message..."></textarea> 
+                </div>
+                    <button>Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer id="footer-area">
+        <div class="socials">
+            <img src="images/facebook.jpg" alt="facebook">
+            <img src="images/twitter.jpg" alt="twitter">
+            <img src="images/insta.jpg" alt="instagram">
+            <img src="images/whatsapp.jpg" alt="whatsapp">
+            <img src="images/youtube.jpg" alt="youtube">
+            <img src="images/gmail.jpg" alt="gmail">
+            <img src="images/github-logo.jpg" alt="github">
+        </div>
+    </footer>
+</body>
+</html>
