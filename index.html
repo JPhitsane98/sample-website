@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" type = "text/css" href="style.css">
     <script src="main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+    </script>
 </head>
 <body>
-   <div id="main">
-       <nav>
-           <a href="#home" class="logo">Profile</a>
-           <ul class="menu">
-               <li><a href="#home">Home</a></li>
-               <li><a href="#about">About</a></li>
-               <li><a href="#achievement">Achievements</a></li>
-               <li><a href="#skills">Skills</a></li>
-               <li><a href="#contact">Contact</a></li>
-               <li>  <a href="javascript:void(0);" class="icon" onclick="menuFunction()"><i class="fa fa-bars"></i></a>
-                </li>
-           </ul>
-       </nav>
-    </div>
+        <nav>
+            <label class="logo">Profile</label>
+               <ul class="menu">
+                    <li><a class="active" href="#home">Home</a>
+                    </li>
+                    <li><a href="#about">About</a>
+                    </li>
+                    <li><a href="#achievement">Achievements</a>
+                    </li>
+                    <li><a href="#skills">Skills</a>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                    </li>
+               </ul>
+        </nav>
+       
     <section id="home">
         <div class="home-content">
             <img src="images/IMG_20190716_150003.jpg" alt="profile" width="130"height="160">
             <h2 style="color: darkmagenta;">Selloane Phitsane,</h2>
-            <h3 style="color: darkmagenta;">Programmer</h3>
+            <h4>Programmer</h4>
             <p class="details">This is my Technical CV, it includes everything needed to know about me. scroll through the website to find out more.</p>
             <a href="JS.Phitsane_CV.pdf" class="btnCv" download>Download CV</a>
         </div>
@@ -61,9 +67,9 @@
         <img src="images/office-365-logo.jpg" alt="office"/>
        </div>
 
-    <div class="skill-bar">
-        <p>JAVA</p>
-       <div class="colunm-bars">
+        <div class="skill-bar">
+         <p>JAVA</p>
+        <div class="colunm-bars">
             <div class="JAVA">70%</div>
         </div>
         <p>C#</p>
@@ -82,8 +88,8 @@
         <div class="colunm-bars">
             <div class="Office-365">80%</div>
         </div>
-    </div>
-</section>  
+     </div>
+    </section>  
 
     <section id ="contact">
         <form>
@@ -101,21 +107,38 @@
                         <label>Message:</label>
                         <textarea required class="message" name="message" cols="10" rows="2" placeholder="Write Message..."></textarea> 
                 </div>
-                    <button>Submit</button>
+                    <input class="button" type="button" value="Submit" onclick="sendEmail()" />
                 </div>
             </div>
         </form>
     </section>
+
     <footer id="footer-area">
         <div class="socials">
-            <img src="images/facebook.jpg" alt="facebook">
-            <img src="images/twitter.jpg" alt="twitter">
-            <img src="images/insta.jpg" alt="instagram">
-            <img src="images/whatsapp.jpg" alt="whatsapp">
-            <img src="images/youtube.jpg" alt="youtube">
-            <img src="images/gmail.jpg" alt="gmail">
-            <img src="images/github-logo.jpg" alt="github">
+            <a target="_blank" href="https://www.facebook.com/" >
+                <img src="images/facebook.jpg" alt="facebook">
+            </a>
+            <a target="_blank" href="https://www.twitter.com/">
+                <img src="images/twitter.jpg" alt="twitter">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/">
+                <img src="images/insta.jpg" alt="instagram">
+            </a>
+            <a target="_blank" href="https://www.whatsapp.com/">
+                <img src="images/whatsapp.jpg" alt="whatsapp">
+            </a>
+            <a target="_blank" href="https://www.youtube.com/">
+                <img src="images/youtube.jpg" alt="youtube">
+            </a>
+            <a target="_blank" href="https://www.gmail.com/">
+                <img src="images/gmail.jpg" alt="gmail">
+            </a>
+            <a target="_blank" href="https://www.github.com/JPhitsane98">
+                <img src="images/github-logo.jpg" alt="github">
+            </a>
+            <button class="locatebtn" onclick="getLocation()">Allow location</button>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

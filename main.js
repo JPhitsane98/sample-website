@@ -1,22 +1,33 @@
-function menuFunction() {
-    var x = document.getElementById("main");
-    if (x.className === "menu") {
-      x.className += " responsive";
-    } else {
-      x.className = "menu";
-    }
-  }
-
+//email API
 function sendEmail(){
     Email.send({
-        SecureToken : "42803bd8-5766-4d49-bcb0-efa026191551",
+        SecureToken : "3f335d8a-77aa-48e8-a341-7a4346143150",
         To : 'selloanephitsane@gmail.com',
-        From : "selloanephitsane@gmail.com.com",
+        From : "smtp@gmail.com",
         Subject : "This is the subject",
         Body : "And this is the body"
     }).then(
       message => alert(message)
     );
-    smtp.UseDefaultCredentials = false;
-    smtp.EnableSsl = true;
+}
+
+//highlighting active menu item
+$('li a').on('click', function(){
+    $('li a').removeClass('active');
+    $(this).toggleClass('active');
+ })
+
+ //for getting location of user API
+var x = document.getElementById("socials");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
 }
